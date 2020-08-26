@@ -9,7 +9,9 @@ namespace Lab
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            MainLoop();
+            //MainLoop();
+            int [] numbers = Challenge4.IdentifyNumbers(new int[] {1,2,2,2,3,4,4,4,4,4 });
+            Console.WriteLine(numbers);
         }
 
         public static void MainLoop()
