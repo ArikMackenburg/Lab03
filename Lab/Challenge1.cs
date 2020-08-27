@@ -6,7 +6,7 @@ namespace Lab
 {
     public class Challenge1
     {
-        public static int ReturnSum(int val1, int val2, int val3)
+        public static int ReturnProduct(int val1, int val2, int val3)
         {
             return val1 * val2 * val3;
         }
@@ -20,7 +20,7 @@ namespace Lab
         }
         public static int InputHandler(string input)
         {
-            int sum;
+            int product;
             string[] arr = input.Split(" ");
             int[] intArr = new int[arr.Length];
             try
@@ -31,24 +31,24 @@ namespace Lab
                 }
                 if (arr.Length < 3)
                 {
-                    sum = 0;
-                    Console.WriteLine($"{sum}");
-                    return sum;
+                    product = 0;
+                    Console.WriteLine($"{product}");
+                    return product;
                 }
                 else
                 {
-                    int result = ReturnSum(intArr[0], intArr[1], intArr[2]);
-                    sum = result;
-                    Console.WriteLine($"{sum}");
-                    return sum;
+                    int result = ReturnProduct(intArr[0], intArr[1], intArr[2]);
+                    product = result;
+                    Console.WriteLine($"{product}");
+                    return product;
                 }
 
             }
             catch (Exception)
             {
-                sum = 1;
-                Console.WriteLine($"{sum}");
-                return sum;
+                product = 1;
+                Console.WriteLine($"{product}");
+                return product;
             }
         }
     }
