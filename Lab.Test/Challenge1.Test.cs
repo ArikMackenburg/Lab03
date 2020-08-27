@@ -11,11 +11,11 @@ namespace Lab.Test
         [InlineData(1,5,2,10)]
         [InlineData(-1,2,2,-4)]
         [InlineData(0,100,2,0)]
-        public void Take3ReturnSum(int val1, int val2, int val3, int expect)
+        public void Take3ReturnProduct(int val1, int val2, int val3, int expect)
         {
-            int sum = Challenge1.ReturnSum(val1, val2, val3);
+            int product = Challenge1.ReturnProduct(val1, val2, val3);
 
-            Assert.Equal(expect, sum);
+            Assert.Equal(expect, product);
         }
         [Theory]
         [InlineData("a b c",1)]
